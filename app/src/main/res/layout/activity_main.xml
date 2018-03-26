@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sqlite.automaticamusements.com.sqlite.MainActivity">
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        tools:layout_editor_absoluteX="3dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="203dp" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="203dp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_insert"
+        android:layout_marginLeft="12dp" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginStart="13dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="203dp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_update"
+        android:layout_marginLeft="13dp" />
+
+    <TextView
+        android:id="@+id/f_output"
+        android:layout_width="326dp"
+        android:layout_height="241dp"
+        android:layout_marginBottom="8dp"
+        android:text="1234tgfvb"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <EditText
+        android:id="@+id/f_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Id"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/f_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <EditText
+        android:id="@+id/f_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_update"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
